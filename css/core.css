@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Font";
+  src: url("./JetBrains.ttf");
+  font-size: 15px;
+}
 :root {
   --bg: #11111b;
   --bg2: #1e1e2e;
   --fg: #f0f0f0;
+}
+
+#mdContent {
+  background-color: var(--bg2);
 }

@@ -1,0 +1,1 @@
+to będzie zawartość strony po polsku

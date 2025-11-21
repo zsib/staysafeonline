@@ -1,5 +1,6 @@
 @import url("core.css");
 
+
 * {
     background-color: var(--bg);
 }
@@ -11,4 +12,17 @@
     border-radius: 10px;
     margin: auto;
     padding: 5px;
+}
+
+.ft {
+    color: var(--fg);
+}
+
+.title {
+    color: var(--fg);
+    font-size: 50px;
+}
+.subtitle {
+    color: var(--fg);
+    font-size: large;
 }

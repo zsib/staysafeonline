@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="main-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cum voluptatibus eum corrupti omnis aliquam quos dolorum perspiciatis, quam eius temporibus accusamus placeat incidunt possimus est sequi quas inventore et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sunt inventore quidem eligendi iusto ducimus, natus ea corporis, voluptatem, corrupti dolorum delectus repellat ab. Sint assumenda sapiente eligendi aliquid illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nam voluptas, dolore perferendis deleniti ad provident, laboriosam possimus, ipsum quis suscipit ullam. Minima voluptatibus saepe, vero nostrum delectus suscipit dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum eaque amet commodi, sapiente adipisci libero, quibusdam distinctio necessitatibus numquam nulla veritatis aspernatur earum aut. Voluptatum cumque reiciendis nemo consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium placeat maiores suscipit cupiditate ex at ducimus dolorem. Maxime, fuga ullam veniam ab assumenda eligendi ipsum error pariatur a, nemo quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, officia doloremque. Ducimus natus tenetur cupiditate est, distinctio maiores magnam quasi inventore recusandae perferendis. Minus eaque reprehenderit incidunt, ipsa odit sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente quo corrupti laboriosam deleniti maxime blanditiis in assumenda dolorem consequatur, tenetur optio, fugit, voluptas ullam adipisci possimus vel quae non?
-    </div>
+    <div class="title">Stay safe online</div>
+    <div class="subtitle">everything you need to know about cybersecurity</div>
+
+    <div class="main-body" id="mdContent"></div>
+    
+    <br>
+    <footer class="ft">Site code © 2025 zsib — GPL v3.0<br>Content licensed under CC BY 4.0</footer>
+
+    <script>
+        fetch("content/en.md")
+        .then(r => r.text())
+        .then(md => {
+            document.getElementById("mdContent").innerHTML = marked.parse(md);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
