@@ -1,28 +1,156 @@
-@import url("core.css");
+/* ...existing code... */
 
-
-* {
-    background-color: var(--bg);
+:root{
+  --bg: #0f1724;         /* deep navy */
+  --card: #0b1220;       /* slightly lighter panel */
+  --accent: #00c2a8;     /* teal accent */
+  --accent-2: #7dd3fc;   /* light blue for highlights */
+  --muted: #94a3b8;      /* muted text */
+  --text: #e6eef6;       /* main text */
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --max-width: 900px;
 }
 
-.main-body {
-    color: var(--fg);
-    background-color: var(--bg2);
-    border: 1px solid var(--fg);
-    border-radius: 10px;
-    margin: auto;
-    padding: 5px;
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{
+  height:100%;
+  background: linear-gradient(180deg, #071028 0%, var(--bg) 60%);
+  color:var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.55;
+  padding:32px 20px;
 }
 
-.ft {
-    color: var(--fg);
+/* Page container */
+.header{
+  max-width:var(--max-width);
+  margin:0 auto 20px;
+  padding:28px;
+  background: linear-gradient(90deg, rgba(0,194,168,0.06), rgba(125,211,252,0.03));
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  align-items:flex-start;
 }
 
-.title {
-    color: var(--fg);
-    font-size: 50px;
+/* Title + subtitle */
+.title{
+  font-size:28px;
+  font-weight:700;
+  letter-spacing: -0.6px;
+  color:var(--text);
 }
-.subtitle {
-    color: var(--fg);
-    font-size: large;
+
+.subtitle{
+  color:var(--muted);
+  font-size:13px;
 }
+
+/* Main content area */
+.main-body{
+  max-width:var(--max-width);
+  margin:18px auto;
+  padding:28px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+  color:var(--text);
+}
+
+/* Markdown content improvements */
+.main-body h1,
+.main-body h2,
+.main-body h3{
+  color:var(--text);
+  margin-top:20px;
+  margin-bottom:10px;
+  line-height:1.2;
+}
+
+.main-body p{
+  color:var(--muted);
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+/* Links */
+.main-body a{
+  color:var(--accent-2);
+  text-decoration:none;
+  border-bottom:1px dashed rgba(125,211,252,0.15);
+}
+.main-body a:hover{
+  color:var(--accent);
+  border-bottom-style:solid;
+}
+
+/* Code blocks and inline code */
+.main-body pre{
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));
+  padding:14px;
+  border-radius:8px;
+  overflow:auto;
+  color:#cbd5e1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  font-size:13px;
+  margin:18px 0;
+  border:1px solid rgba(255,255,255,0.03);
+}
+.main-body code{
+  background:var(--glass);
+  padding:3px 6px;
+  border-radius:6px;
+  color:#bfe6dd;
+  font-size:13px;
+}
+
+/* Blockquote */
+.main-body blockquote{
+  border-left:4px solid rgba(0,194,168,0.12);
+  padding:12px 16px;
+  color:var(--muted);
+  background:linear-gradient(90deg, rgba(0,194,168,0.02), transparent);
+  margin:12px 0;
+  border-radius:6px;
+}
+
+/* Footer */
+.ft{
+  max-width:var(--max-width);
+  margin:18px auto;
+  padding:14px;
+  color:var(--muted);
+  text-align:center;
+  font-size:13px;
+}
+
+/* Responsiveness */
+@media (max-width:640px){
+  .header, .main-body, .ft{
+    padding:18px;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .title{font-size:20px}
+  .subtitle{font-size:12px}
+}
+
+/* utility - subtle accent button if needed */
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:9px;
+  background:linear-gradient(180deg,var(--accent), #009a86);
+  color:#022224;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow: 0 6px 18px rgba(0,194,168,0.12);
+}
+
+/* ...existing code... */
