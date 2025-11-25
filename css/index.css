@@ -1,14 +1,4 @@
-:root{
-  --bg: #0f1724;         /* deep navy */
-  --card: #0b1220;       /* slightly lighter panel */
-  --accent: #00c2a8;     /* teal accent */
-  --accent-2: #7dd3fc;   /* light blue for highlights */
-  --muted: #94a3b8;      /* muted text */
-  --text: #e6eef6;       /* main text */
-  --glass: rgba(255,255,255,0.04);
-  --radius: 12px;
-  --max-width: 900px;
-}
+@import url("root.css");
 
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{
@@ -139,4 +129,31 @@ html,body{
   font-weight:600;
   text-decoration:none;
   box-shadow: 0 6px 18px rgba(0,194,168,0.12);
+}
+
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-top:10px;
+}
+.lang-btn{
+  background:transparent;
+  border:none;
+  color:var(--accent-2);
+  font-size:14px;
+  cursor:pointer;
+  padding:6px 8px;
+  border-radius:6px;
+}
+
+.lang-btn[aria-selected="true"]{
+  background:var(--accent);
+  color:#022224;
+  font-weight:600;
+}
+.lang-btn img{
+  width:20px;
+  height:auto;
+  vertical-align:middle;
 }

@@ -11,6 +11,16 @@
     <div class="header">
         <div class="title">Stay safe online</div>
         <div class="subtitle">everything you need to know about cybersecurity</div>
+        
+        <div class="lang-switch" role="tablist" aria-label="Language selection">
+            <button class="lang-btn" data-lang="en" role="tab" aria-selected="true">
+                <img src="assets/united-kingdom-flag-icon.png" alt="English">
+            </button>
+            <p>/</p>
+            <button class="lang-btn" data-lang="pl" role="tab" aria-selected="false">
+                <img src="assets/poland-flag-icon.png" alt="Polski">
+            </button>
+        </div>
     </div>
 
     <div class="main-body" id="mdContent"></div>
@@ -18,13 +28,7 @@
     <br>
     <footer class="ft">Site code © 2025 zsib — GPL v3.0<br>Content licensed under CC BY 4.0</footer>
 
-    <script>
-        fetch("content/en.md")
-        .then(r => r.text())
-        .then(md => {
-            document.getElementById("mdContent").innerHTML = marked.parse(md);
-        });
-    </script>
+    <script src="js/language.js"></script>
 
 </body>
 </html>
