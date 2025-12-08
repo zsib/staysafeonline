@@ -1,2 +1,22 @@
-to będzie zawartość strony po polsku<br><br><br>
-jest git
+**1. Bezpieczna przeglądarka**<br>
+Oczywiście, podstawową zasadą korzystania z Internetu jest nic innego jak sama wyszukiwarka. Niestety, niektóre popularne przeglądarki internetowe mogą gromadzić twoje dane, włącznie z tymi, które uznajesz za bardziej prywatne. Odradzamy używania m.in. Google Chrome, Microsoft Edge czy Comet. Aby dowiedzieć się które aplikacje gromadzą twoje dane, przeszukuj media społecznościowe w tym temacie lub analizuj znalezione szkodniki w aplikacji do czyszczenia rejestru.<br><br>
+**2. VPN**<br>
+Kolejnym przydatnym narzędziem zewnętrznym jest VPN (Virtual Private Network - Wirtualna Sieć Prywatna). Zmieniając swoją lokalizację, chronisz swoje urządzenia przed namierzeniem przez hackerów, szkodliwe systemy, podszywające się przedsiębiorstwa itd.<br><br>
+**3. Używanie zaufanego programu do czyszczenia rejestru**<br>
+Kolejnym sposobem na ochronę prywatności jest pobranie sprawdzonej aplikacji skanującej. To pozwoli na odnalezienie i usunięcie szkodliwych plików, których nie znajduje np. pospolity Windows Defender. Pamiętaj, że nawet pliki oznaczone jako systemowe mogą monitorować twoje archiwa.<br><br>
+**4. Prywatność**<br>
+Jedna z najprostszych a zarazem ignorowanych zasad korzystania z usług online jest podstawowe poczucie odpowiedzialności. Nie jest to bezpośrednio powiązane z bezpieczeństwem, ale warto mieć na uwadze, że twój adres IP zostawia się wszędzie, zostając w bazach danych nawet najbardziej wstydliwych stron. Należy więc utrzymywać historię przeglądania z prywatnością i przyzwoitością.<br><br>
+**4. Adblock** <br>
+Następnym praktycznym gadżetem do codziennego użytku jest bloker reklam. Poza oczywistą ulgą jaką jest brak wyskakujących okienek, może uchronić cię przed pop-upami zabierającymi na podejrzane strony czy wymuszającymi instalację szkodliwych plików. Dziś adblockery są często wbudowane w przeglądarkę.<br><br>
+**5. Zdrowy rozsądek**<br>
+Do "zdrowego" surfowania niezbędna jest również podstawowe pojęcie o bezpieczeństwie używanych witryn. Jeśli strona jest nienaturalnie wypełniona reklamami, powoduje reakcje systemu obronnego lub wygląda na starszą, może być to fake lub inny rodzaj szkodliwej ścieżki.<br><br>
+**6. Czytanie polityki prywatności**<br>
+Wiele osób podczas wchodzenia na nowe strony od razu potwierdza wszystkie pliki cookies i politykę prywatności z przyzwyczajenia. Nie jest to jednak należne zachowanie - nie wszystkie opcje, które stawiają pod znakiem zapytania prywatność użytkownika są niezbędne do działania stron internetowych, czy najzwyczajniej są warte akceptacji.<br><br>
+**7. Sprawdź swoje ustawienia**<br>
+Niektóre opcje w popularnych aplikacjach automatycznie włączają funkcje które są często szkodliwe dla prywatności użytkowników - przykładowo, wszystkie nowe czaty pomiędzy dwoma użytkownikami na Messengerze mają automatycznie włączoną funkcję dostarczania wiadomości do szkolenia Meta AI. Należy zwracać uwagę na to, na co się zgadzamy.<br><br>
+**8. Udostępnianie zdjęć**<br>
+Dzielenie się fotografiami z innymi online jest dosyć rozległym tematem, ale nie potrzeba wiele wiedzy, aby zachować ostrożność. Zdjęcia, na których znajdujesz się ty, rodzina czy ogółem rzeczy, które uznajesz za prywatne, wysyłaj TYLKO gdy uważasz to za stosowne. Należy mieć na uwadze ilość, dostępność i dosadność osobistych danych, które udostępniamy w m.in. mediach społecznościowych.<br><br>
+**9. Zachowaj powagę**<br>
+Dziś istnieje wiele portali do rozmów i dyskusji z innymi użytkownikami, takich jak Reddit, X, Threads, itp.. Internet jest jednak najlepszym miejscem na udostępnianie bardziej kontrowersyjnych opinii, polecamy więc swoje dosadne zdania zachowywać dla siebie lub przedstawiać w rozmowach rzeczywistych, jeśli chcemy podtrzymać status rozsądnego użytkownika.<br><br>
+**10. Konta**<br>
+Ostatnim ważnym tematem w kwestii bezpieczeństwa w internecie jest logowanie się. Uwierzytelnianie się na niezweryfikowanych na stronach może przynieść niechciane efekty, jeśli witryny z którymi mieliśmy lub mamy kontakt okażą się niebezpieczne. Jeśli myślisz, że twoje konta są zagrożone, uważaj na portale i zmieniaj hasła. Pamiętaj jednak, aby twoje dane do rejestracji były zarówno bezpieczne, jak i łatwe do zapamiętania lub zapisania.
