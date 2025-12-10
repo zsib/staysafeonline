@@ -3,6 +3,7 @@
   const cache = {};
   const btnContainer = document.querySelector('.lang-switch');
   const buttons = Array.from(document.querySelectorAll('.lang-btn'));
+
   function setActiveButton(lang){
     buttons.forEach(b => {
       const is = b.dataset.lang === lang;
@@ -10,6 +11,7 @@
       b.setAttribute('aria-selected', is ? 'true' : 'false');
     });
   }
+
   async function fetchFirst(urls){
     for(const u of urls){
       try{
@@ -21,6 +23,7 @@
     }
     throw new Error('No content file found');
   }
+
   async function loadLang(lang){
     setActiveButton(lang);
     container.innerHTML = '<p class="loading">Loading…</p>';
@@ -45,12 +48,14 @@
       console.error(err);
     }
   }
+
   btnContainer.addEventListener('click', e => {
     const b = e.target.closest('.lang-btn');
     if(!b) return;
     const lang = b.dataset.lang;
     if(lang) loadLang(lang);
   });
+
   loadLang('pl');
   window.loadLang = loadLang;
 })();
