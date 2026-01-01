@@ -1,4 +1,5 @@
 @import url("root.css");
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 *{
   box-sizing:border-box;margin:0;padding:0
@@ -48,9 +49,9 @@ html,body{
 
 .main-body{
   max-width:var(--max-width);
-  margin:18px auto;
+  /* margin:18px auto; */
   padding:28px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: var(--main-body-bg);
   border-radius:var(--radius);
   box-shadow: 0 12px 40px rgba(2,6,23,0.6);
   border: 1px solid rgba(255,255,255,0.03);
@@ -93,22 +94,6 @@ html,body{
   margin:18px 0;
   border:1px solid rgba(255,255,255,0.03);
 }
-.main-body code{
-  background:var(--glass);
-  padding:3px 6px;
-  border-radius:6px;
-  color:#bfe6dd;
-  font-size:13px;
-}
-
-.main-body blockquote{
-  border-left:4px solid rgba(0,194,168,0.12);
-  padding:12px 16px;
-  color:var(--muted);
-  background:linear-gradient(90deg, rgba(0,194,168,0.02), transparent);
-  margin:12px 0;
-  border-radius:6px;
-}
 
 .ft{
   max-width:var(--max-width);
@@ -140,29 +125,36 @@ html,body{
   box-shadow: 0 6px 18px rgba(0,194,168,0.12);
 }
 
-.lang-switch{
+.text-switch{
   display:flex;
   align-items:center;
   gap:6px;
   margin-top:10px;
 }
-.lang-btn{
+
+.text-btn{
   background:transparent;
   border:none;
   color:var(--accent-2);
   font-size:14px;
   cursor:pointer;
-  padding:6px 8px;
+  padding:20px 8px;
   border-radius:6px;
 }
 
-.lang-btn[aria-selected="true"]{
-  background:var(--accent);
-  color:#022224;
+.text-btn[aria-selected="true"]{
+  background:var(--main-body-bg);
+  color: var(--accent);
   font-weight:600;
 }
-.lang-btn img{
+.text-btn img{
   width:20px;
   height:auto;
   vertical-align:middle;
+}
+
+.main-body-wrapper{
+  max-width:var(--max-width);
+  margin: 0 auto;
+  padding:0;
 }

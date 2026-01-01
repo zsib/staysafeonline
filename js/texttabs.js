@@ -55,6 +55,7 @@
     if(part) loadText(part);
   });
 
+
   loadText('1');
   window.loadText = loadText;
 })();

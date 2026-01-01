@@ -1,6 +1,7 @@
 :root{
   --bg: #0f1724;         /* deep navy */
   --bg2: #0b1220;       /* slightly lighter panel */
+  --main-body-bg: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   --accent: #00c2a8;     /* teal accent */
   --accent-2: #7dd3fc;   /* light blue for highlights */
   --muted: #94a3b8;      /* muted text */
