@@ -1,7 +1,9 @@
 @import url("root.css");
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 *{
-  box-sizing:border-box;margin:0;padding:0
+  box-sizing:border-box;margin:0;padding:0;
+  line-height: 1.2; /*for nerdfonts*/
 }
 
 a {
@@ -47,10 +49,10 @@ html,body{
 }
 
 .main-body{
+  position: relative;
   max-width:var(--max-width);
-  margin:18px auto;
   padding:28px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: var(--main-body-bg);
   border-radius:var(--radius);
   box-shadow: 0 12px 40px rgba(2,6,23,0.6);
   border: 1px solid rgba(255,255,255,0.03);
@@ -88,26 +90,9 @@ html,body{
   border-radius:8px;
   overflow:auto;
   color:#cbd5e1;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
   font-size:13px;
   margin:18px 0;
   border:1px solid rgba(255,255,255,0.03);
-}
-.main-body code{
-  background:var(--glass);
-  padding:3px 6px;
-  border-radius:6px;
-  color:#bfe6dd;
-  font-size:13px;
-}
-
-.main-body blockquote{
-  border-left:4px solid rgba(0,194,168,0.12);
-  padding:12px 16px;
-  color:var(--muted);
-  background:linear-gradient(90deg, rgba(0,194,168,0.02), transparent);
-  margin:12px 0;
-  border-radius:6px;
 }
 
 .ft{
@@ -120,7 +105,7 @@ html,body{
 }
 /*why yes very responsiveness */
 @media (max-width:640px){
-  .header, .main-body, .ft{
+  .header, .main-body, .main-body-wrapper, .ft{
     padding:18px;
     margin-left:10px;
     margin-right:10px;
@@ -140,29 +125,42 @@ html,body{
   box-shadow: 0 6px 18px rgba(0,194,168,0.12);
 }
 
-.lang-switch{
+.text-switch{
   display:flex;
   align-items:center;
+  position: relative;
+  max-width: var(--max-width);
   gap:6px;
-  margin-top:10px;
-}
-.lang-btn{
-  background:transparent;
-  border:none;
-  color:var(--accent-2);
-  font-size:14px;
-  cursor:pointer;
-  padding:6px 8px;
-  border-radius:6px;
-}
+  margin: 0 auto;
+} 
 
-.lang-btn[aria-selected="true"]{
-  background:var(--accent);
-  color:#022224;
+.text-btn{
+  background: transparent;
+  border: none;
+  color: var(--accent-2);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 0, 10px;
+  border-radius: 6px;
+
+}
+.text-btn[aria-selected="true"]{
+  background:var(--main-body-bg);
+  color: var(--accent);
   font-weight:600;
 }
-.lang-btn img{
-  width:20px;
-  height:auto;
-  vertical-align:middle;
+.text-btn i{
+  font-size:18px;
+  overflow: visible;
+}
+
+.main-body-wrapper{
+  max-width:var(--max-width);
+  margin: 0 auto;
+
+  display: grid;
+  place-items: center;
+  height: auto;
+
 }
