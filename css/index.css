@@ -2,7 +2,8 @@
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 *{
-  box-sizing:border-box;margin:0;padding:0
+  box-sizing:border-box;margin:0;padding:0;
+  line-height: 1.2; /*for nerdfonts*/
 }
 
 a {
@@ -48,8 +49,8 @@ html,body{
 }
 
 .main-body{
+  position: relative;
   max-width:var(--max-width);
-  /* margin:18px auto; */
   padding:28px;
   background: var(--main-body-bg);
   border-radius:var(--radius);
@@ -89,7 +90,6 @@ html,body{
   border-radius:8px;
   overflow:auto;
   color:#cbd5e1;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
   font-size:13px;
   margin:18px 0;
   border:1px solid rgba(255,255,255,0.03);
@@ -105,7 +105,7 @@ html,body{
 }
 /*why yes very responsiveness */
 @media (max-width:640px){
-  .header, .main-body, .ft{
+  .header, .main-body, .main-body-wrapper, .ft{
     padding:18px;
     margin-left:10px;
     margin-right:10px;
@@ -128,33 +128,39 @@ html,body{
 .text-switch{
   display:flex;
   align-items:center;
+  position: relative;
+  max-width: var(--max-width);
   gap:6px;
-  margin-top:10px;
-}
+  margin: 0 auto;
+} 
 
 .text-btn{
-  background:transparent;
-  border:none;
-  color:var(--accent-2);
-  font-size:14px;
-  cursor:pointer;
-  padding:20px 8px;
-  border-radius:6px;
-}
+  background: transparent;
+  border: none;
+  color: var(--accent-2);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 0, 10px;
+  border-radius: 6px;
 
+}
 .text-btn[aria-selected="true"]{
   background:var(--main-body-bg);
   color: var(--accent);
   font-weight:600;
 }
-.text-btn img{
-  width:20px;
-  height:auto;
-  vertical-align:middle;
+.text-btn i{
+  font-size:18px;
+  overflow: visible;
 }
 
 .main-body-wrapper{
   max-width:var(--max-width);
   margin: 0 auto;
-  padding:0;
+
+  display: grid;
+  place-items: center;
+  height: auto;
+
 }
