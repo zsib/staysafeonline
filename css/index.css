@@ -61,12 +61,13 @@ html,body{
 
 .main-body{
   position: relative;
-  max-width:var(--max-width);
+  display: flex;
+  /* max-width:var(--max-width) / 2; */
   padding:28px;
   background: var(--main-body-bg);
   border-radius:var(--radius);
   box-shadow: 0 12px 40px rgba(2,6,23,0.6);
-  border: 1px solid rgba(255,255,255,0.03);
+  /* border: 1px solid rgba(255,255,255,0.03); */
   color:var(--text);
 }
 
@@ -116,11 +117,11 @@ html,body{
 }
 /*why yes very responsiveness */
 @media (max-width:640px){
-  .header, .main-body, .main-body-wrapper, .ft{
+  /* .header, .main-body, .main-body-wrapper, .ft{
     padding:18px;
     margin-left:10px;
     margin-right:10px;
-  }
+  } */
   .title{font-size:20px}
   .subtitle{font-size:12px}
 }
@@ -153,25 +154,25 @@ html,body{
   cursor: pointer;
   padding: 8px 30px;
   margin: 0, 10px;
-  border-radius: 6px;
-
+  /* border-radius: 6px; */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .text-btn[aria-selected="true"]{
   background:var(--main-body-bg);
   color: var(--accent);
   font-weight:600;
 }
-.text-btn i{
-  font-size:18px;
-  overflow: visible;
+.text-btn img{
+  width:20px;
+  height:20px;
 }
 
 .main-body-wrapper{
   max-width:var(--max-width);
   margin: 0 auto;
-
+  display: flex;
   display: grid;
   place-items: center;
   height: auto;
-
 }
