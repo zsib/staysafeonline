@@ -1,7 +1,8 @@
 (function(){
   const container = document.getElementById('mdContent');
   const cache = {}; // ts lwk cool
-  const btnContainer = document.querySelector('.text-switch');
+  const btnContainer1 = document.querySelector('.text-switch-1');
+  // const btnContainer2 = document.querySelector('.text-switch-2');
   const buttons = Array.from(document.querySelectorAll('.text-btn'));
 
   function setActiveButton(lang){
@@ -48,12 +49,19 @@
     }
   }
 
-  btnContainer.addEventListener('click', e => {
+  btnContainer1.addEventListener('click', e => {
     const b = e.target.closest('.text-btn');
     if(!b) return;
     const part = b.dataset.lang;
     if(part) loadText(part);
   });
+
+  // btnContainer2.addEventListener('click', e => {
+  //   const b = e.target.closest('.text-btn');
+  //   if(!b) return;
+  //   const part = b.dataset.lang;
+  //   if(part) loadText(part);
+  // });
 
 
   loadText('1');
