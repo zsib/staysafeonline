@@ -1,0 +1,6 @@
+@import url('./root.css');
+
+body {
+    color: var(--text);
+    background-color: var(--bg);
+}

@@ -117,11 +117,11 @@ html,body{
 }
 /*why yes very responsiveness */
 @media (max-width:640px){
-  /* .header, .main-body, .main-body-wrapper, .ft{
+  .header, .main-body, .main-body-wrapper, .ft{
     padding:18px;
     margin-left:10px;
     margin-right:10px;
-  } */
+  }
   .title{font-size:20px}
   .subtitle{font-size:12px}
 }
@@ -137,8 +137,7 @@ html,body{
   box-shadow: 0 6px 18px rgba(0,194,168,0.12);
 }
 
-.text-switch{
-  display:flex;
+.text-switch-1, .text-switch-2{
   align-items:center;
   position: relative;
   max-width: var(--max-width);
@@ -154,7 +153,6 @@ html,body{
   cursor: pointer;
   padding: 8px 30px;
   margin: 0, 10px;
-  /* border-radius: 6px; */
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
